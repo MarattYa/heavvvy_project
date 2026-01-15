@@ -1,9 +1,17 @@
-venv/
-.pylintrc
+# Python
 __pycache__/
+*.pyc
 
-.vscode
-.idea
+# Virtual environment
+venv/
 
-db.sqlite3
+# Django
+*.sqlite3
+*.log
 media/
+staticfiles/
+
+# IDE
+.vscode/
+.idea/
+*.iml
