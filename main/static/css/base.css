@@ -4,6 +4,17 @@
     --box-shadow: 0 1px 1px rgba(0,0,0,0.363);
 }
 
+@font-face {
+    font-family: "Blackblade";
+    src: url(../fonts/Blackblade.ttf);
+}
+
+span {
+    font-family: "Blackblade", serif;
+    font-size: 48px;
+    line-height: 0;
+}
+
 body {
     font-family: "Carrois Gothic", sans-serif;
     font-size: 18px;
@@ -160,7 +171,7 @@ h5 {
 .logogothic {
     position: absolute;
     top: 6%;
-    left: 40%;
+    left: 39%;
     width: 400px;
     height: 300px;
 }
@@ -226,10 +237,10 @@ h5 {
 
 /* list.html */
 .main {
-    margin-left: 150px;
+    flex: 1;
 }
 
-main-title {
+.main-title {
     font-size: 36px;
     margin-bottom: 10px;
     margin-top: 65px;
@@ -248,12 +259,16 @@ main-title {
 }
 
 .sidebar {
-    margin-top: 70px;
-
+    width: 220px;
+    flex-shrink: 0;
+    margin-top: 0; /* убираем старый отступ */
 }
 
 .llist {
-    margin-left: -80px;
+    display: flex;
+    gap: 40px; 
+    align-items: flex-start;
+    margin-top: 60px;
 }
 
 .sidebar ul li {
@@ -283,13 +298,11 @@ main-title {
 
 .pagination {
     display: flex;
-    position: absolute;
-    bottom: 0%;
-    left: 46%;
-    gap: 12px;
     justify-content: center;
+    gap: 12px;
+    margin: 40px 0;
+    position: static;
 }
-
 .disabled {
     opacity: 0.2;
 }
