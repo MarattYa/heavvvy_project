@@ -28,7 +28,6 @@ def login(request):
 def registration(request):
     if request.method == 'POST':
         form = UserRegistrationForm(data=request.POST)
-        print(form.errors)
         if form.is_valid():
             form.save()
             user = form.instance
