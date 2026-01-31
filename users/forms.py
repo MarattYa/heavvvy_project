@@ -47,4 +47,3 @@ class ProfileForm(UserChangeForm):
         first_name = forms.CharField()
         last_name = forms.CharField()
         username = forms.CharField()
-        email = forms.CharField()
